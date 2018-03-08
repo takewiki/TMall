@@ -26,8 +26,8 @@ class TmallLogin(object):
         self.action = ActionChains(self.driver)
 
     def sendinfo(self):
-        self.driver.find_element_by_id('TPL_username_1').send_keys('784514713@qq.com')
-        self.driver.find_element_by_id('TPL_password_1').send_keys('codeismath11')
+        self.driver.find_element_by_id('TPL_username_1').send_keys('用户名')
+        self.driver.find_element_by_id('TPL_password_1').send_keys('密码')
         self.driver.find_element_by_id('J_SubmitStatic').click()
 
     def checkslipper(self):  # 验证滑块部分
